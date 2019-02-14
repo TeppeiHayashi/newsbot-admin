@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 gem 'sinatra'
 gem 'sinatra-contrib'
+gem 'dotenv'
 gem 'google_drive'
 gem 'sequel'
 gem 'lazy_high_charts'

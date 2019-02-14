@@ -1,0 +1,32 @@
+# Logfile created on 2019-02-14 14:36:28 +0000 by logger.rb/v1.3.0
+F, [2019-02-14T14:36:28.256683 #6567] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T14:37:39.723050 #6616] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T14:37:49.851292 #6627] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T14:45:59.389317 #7134] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T14:47:39.174459 #7282] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T14:48:25.992587 #7344] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T14:48:37.542357 #7358] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T14:49:10.794072 #7387] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T14:49:38.908495 #7424] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T14:50:41.985621 #7483] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T14:51:19.332495 #7535] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T14:54:12.444464 #7683] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T14:55:14.093190 #7732] FATAL -- : nil
+F, [2019-02-14T14:56:32.504928 #7797] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T14:56:48.810447 #7817] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T14:59:14.046428 #8343] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T15:01:08.351583 #8858] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T15:02:21.064831 #8921] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T15:02:52.727023 #8955] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T15:03:27.783754 #8985] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T15:03:58.059383 #9011] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+F, [2019-02-14T15:06:23.721935 #9130] FATAL -- : Sequel::Database.connect takes either a Hash or a String, given: nil
+I, [2019-02-14T16:13:14.854542 #12036]  INFO -- : [["国際", nil], ["トピックス", nil], ["国内", nil], ["経済", nil], ["スポーツ", nil], ["芸能・エンタメ", nil], ["IT", nil], ["トレンド", nil]]
+I, [2019-02-14T16:14:29.600181 #12123]  INFO -- : [["国際", nil], ["トピックス", nil], ["国内", nil], ["経済", nil], ["スポーツ", nil], ["芸能・エンタメ", nil], ["IT", nil], ["トレンド", nil]]
+I, [2019-02-14T16:15:06.652289 #12181]  INFO -- : [["国際", "1"], ["トピックス", "0"], ["国内", "11"], ["経済", "3"], ["スポーツ", "4"], ["芸能・エンタメ", "3"], ["IT", "1"], ["トレンド", "2"]]
+I, [2019-02-14T16:16:05.173749 #12227]  INFO -- : [["国際", 1], ["トピックス", 0], ["国内", 11], ["経済", 3], ["スポーツ", 4], ["芸能・エンタメ", 3], ["IT", 1], ["トレンド", 2]]
+I, [2019-02-14T16:21:23.018329 #12227]  INFO -- : [["国際", 1], ["トピックス", 0], ["国内", 11], ["経済", 3], ["スポーツ", 4], ["芸能・エンタメ", 3], ["IT", 1], ["トレンド", 2]]
+I, [2019-02-14T16:21:27.638940 #12227]  INFO -- : [["国際", 1], ["トピックス", 0], ["国内", 11], ["経済", 3], ["スポーツ", 4], ["芸能・エンタメ", 3], ["IT", 1], ["トレンド", 2]]
+I, [2019-02-14T16:21:58.163402 #12227]  INFO -- : [["国際", 1], ["トピックス", 0], ["国内", 11], ["経済", 3], ["スポーツ", 4], ["芸能・エンタメ", 3], ["IT", 1], ["トレンド", 2]]
+I, [2019-02-14T16:22:05.078458 #12437]  INFO -- : [["国際", 1], ["トピックス", 0], ["国内", 11], ["経済", 3], ["スポーツ", 4], ["芸能・エンタメ", 3], ["IT", 1], ["トレンド", 2]]
+I, [2019-02-14T16:23:08.004777 #12474]  INFO -- : [["国際", 1], ["トピックス", 0], ["国内", 11], ["経済", 3], ["スポーツ", 4], ["芸能・エンタメ", 3], ["IT", 1], ["トレンド", 2]]

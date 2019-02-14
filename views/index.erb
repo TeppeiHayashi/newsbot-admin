@@ -1,0 +1,32 @@
+<div id="stage"></div>
+
+<script>
+//必要なパッケージの読み込み
+google.charts.load('current', {packages: ['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  //オプション設定
+  var options = {
+    'title': 'サンプルチャート',
+    'width': window.innerWidth,
+    'height': window.innerHeight
+  };
+  
+  //月別データ
+  var data = google.visualization.arrayToDataTable([
+    ['カテゴリ', '数量'],
+    <% @res.each_with_index do|row,i| %>
+       ["<%=row[0] %>",<%=row[1]%>],
+    <% end %>
+  ]);
+
+  var stage = document.getElementById('stage');
+  
+  //グラフの種類を設定
+  var chart = new google.visualization.ColumnChart(stage);
+  
+  //データとオプションを設定
+  chart.draw(data, options);
+}
+</script>
