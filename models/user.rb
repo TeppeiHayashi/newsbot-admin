@@ -8,6 +8,10 @@ class User
         DB[:Users].insert(line_id: line_id)
     end
     
+    def self.get_user_count
+        DB[:Users].count.to_i
+    end
+    
     def self.get_user_id(line_id)
         DB[:Users].where(line_id: line_id).first[:id]
     end

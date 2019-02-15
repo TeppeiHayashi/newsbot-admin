@@ -1,32 +1,36 @@
-<div id="stage"></div>
+<div class="col-md-12 col-sm-12 col-xs-12">
+  <div class="dashboard_graph">
 
-<script>
-//必要なパッケージの読み込み
-google.charts.load('current', {packages: ['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+    <div class="row x_title">
+      <div class="col-md-6">
+        <h3>Aggregation by category</h3>
+      </div>
+      <div class="col-md-6">
+        <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+          <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+          <span></span> <b class="caret"></b>
+        </div>
+      </div>
+    </div>
 
-function drawChart() {
-  //オプション設定
-  var options = {
-    'title': 'サンプルチャート',
-    'width': window.innerWidth,
-    'height': window.innerHeight
-  };
-  
-  //月別データ
-  var data = google.visualization.arrayToDataTable([
-    ['カテゴリ', '数量'],
-    <% @res.each_with_index do|row,i| %>
-       ["<%=row[0] %>",<%=row[1]%>],
-    <% end %>
-  ]);
-
-  var stage = document.getElementById('stage');
-  
-  //グラフの種類を設定
-  var chart = new google.visualization.ColumnChart(stage);
-  
-  //データとオプションを設定
-  chart.draw(data, options);
-}
-</script>
+    <div class="col-md-7 col-sm-7 col-xs-12">
+        <div class="x_content">
+          <canvas id="dailyChart">"</canvas>    
+        </div>
+        
+        <input type=hidden id="dailyLabel" value='<%=@label %>'></input>
+        <input type=hidden id="dailyCount" value='<%=@count %>'></input>
+        <form name="dateForm" method="post" action="/">
+            <input type=hidden name="startDate" value="<%=@startDate %>"></input>
+            <input type=hidden name="endDate" value="<%=@endDate %>"></input>
+        </form>
+        
+        
+    </div>
+    <div class="col-md-5 col-sm-5 col-xs-12">
+       <div id="dailyDoughnut" style="height:250px;"></div>
+         
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>

@@ -9,4 +9,7 @@ class ClickLog
                               category_id: category_id)
     end
 
+    def self.get_click_count
+        DB[:click_log].count.to_i
+    end
 end
