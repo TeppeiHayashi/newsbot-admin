@@ -359,6 +359,69 @@ $(document).ready(function(){
 			  };
 
 			} 
+			
+				   
+			if ($('#avgClickCountPerHours').length ){
+			  var echartLine = echarts.init(document.getElementById('avgClickCountPerHours'), theme);			
+			  echartLine.setOption({
+				title: {
+				  text: '2019/02/10 ~'
+				},
+				tooltip: {
+				  trigger: 'axis'
+				},
+				legend: {
+				  x: 220,
+				  y: 40,
+				  data: ['Average of clicks']
+				},
+				toolbox: {
+				  show: true,
+				  feature: {
+					magicType: {
+					  show: true,
+					  title: {
+						line: 'Line',
+						bar: 'Bar'
+					  },
+					  type: ['line', 'bar']
+					},
+					restore: {
+					  show: true,
+					  title: "Restore"
+					},
+					saveAsImage: {
+					  show: true,
+					  title: "Save Image"
+					}
+				  }
+				},
+				calculable: true,
+				xAxis: [{
+				  type: 'category',
+				  boundaryGap: false,
+				  data: JSON.parse($('input[name=line_label]').val())
+				}],
+				yAxis: [{
+				  type: 'value'
+				}],
+				series: [{
+				  name: 'Average of clicks',
+				  type: 'line',
+				  smooth: true,
+				  itemStyle: {
+					normal: {
+					  areaStyle: {
+						type: 'default'
+					  }
+					}
+				  },
+				  data: JSON.parse($('input[name=line_count]').val())
+				}]
+			  });
+
+			} 
+
 	   
 	}
 	

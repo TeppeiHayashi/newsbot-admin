@@ -20,4 +20,17 @@ class ClickCount
    
    graph
  end
+ 
+ # 時間帯における平均クリック数(全期間)
+ def self.get_avg_clicks_per_hour
+  days = DB[:v_click_count_daily].group(:time).all.length
+  data = Hash.new{|h, k| h[k] = [] }
+  DB[:v_click_count_hours].all.map do |row|
+   data[:label].push(row[:time].to_s)
+   data[:count].push(row[:click_count] / days.to_f)
+  end
+  data
+ end
+ 
+
 end
